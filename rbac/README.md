@@ -24,7 +24,15 @@ kubectl run nginx-1 \
 
 ```sh
 kubectl get pod
-kubectl exec -it PODNAME bash
+```
+
+### Get the actual pod name from the previous command's output saved
+```sh
+PODNAME=$(kubectl get pods -n default -o name | cut -d/ -f2)
+```
+### Use the updated version of the command
+```sh
+kubectl exec -it $PODNAME -- bash 
 ```
 
 ### Target API server
