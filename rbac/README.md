@@ -2,6 +2,9 @@
 
 ## Test 1
 
+#This lab is forked from another github user - https://github.com/pradeepnss/gke-troubleshooting/tree/master/rbac. 
+#This lab was forked and updated to make sure that manual for that is valid in 2024. 
+
 ### Create service account and pod using that service account
 
 ```sh
@@ -41,4 +44,9 @@ curl -ik \
 ```
 
 Now how do you fix this so that from this pod we can perform list of pods in default namespace ?
+
+Solution will be provided as a separate file for that LAB. 
+
+Thanks 
+Bart
 
